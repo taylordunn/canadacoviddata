@@ -1,0 +1,6 @@
+- path: provinces
+  name: provinces
+  type: table
+  description: ~
+  rows: 13
+  cols: 10

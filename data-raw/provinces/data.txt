@@ -1,0 +1,20 @@
+path:
+- data.csv
+- data.rds
+type: table
+rows: 13
+cols: 10
+columns:
+  id: integer
+  code: character
+  name: character
+  population: integer
+  area: integer
+  gdp: integer
+  geographic: logical
+  data_status: character
+  updated_at: POSIXct
+  density: numeric
+filenames:
+  data.csv: data.csv
+  data.rds: data.rds
