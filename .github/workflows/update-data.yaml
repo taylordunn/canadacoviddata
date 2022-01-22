@@ -33,11 +33,12 @@ jobs:
       - name: Query dependencies
         run: |
           install.packages("remotes")
+          install.packages("curl")
+          remotes::install_github("taylordunn/canadacovid")
           install.packages("sessioninfo")
           install.packages("pins")
           install.packages("dplyr")
           install.packages("magittr")
-          remotes::install_github("taylordunn/canadacovid")
           saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.rds", version = 2)
           writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/r-version")
         shell: Rscript {0}
