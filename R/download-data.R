@@ -15,7 +15,7 @@ register_github_board <- function() {
 #' Retrieve and save the provinces data
 #'
 #' Retrieves the `provinces` data from the Canadian COVID-19 tracker API
-#' and downloads it to the given board
+#' and downloads it to the given board.
 #'
 #' @param board The name of the `pins` board to write the data.
 #'
