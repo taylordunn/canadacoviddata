@@ -15,14 +15,50 @@ register_github_board <- function() {
 #' Retrieve and save the provinces data
 #'
 #' Retrieves the `provinces` data from the Canadian COVID-19 tracker API
-#' and downloads it to the given board.
+#' and pins it to the given board.
+#' Returns the list of provinces which have been updated, by comparing the
+#' `updated_at` timestamp to the previously pinned data.
 #'
 #' @param board The name of the `pins` board to write the data.
+#'
+#' @return A list of two-letter province/territory codes that have been updated.
 #'
 #' @export
 #' @importFrom canadacovid get_provinces
 #' @importFrom pins pin
+#' @importFrom dplyr anti_join
 download_provinces <- function(board = "github") {
-  canadacovid::get_provinces() %>%
-    pins::pin(name = "provinces", board = board)
+  old_provinces <- pins::pin_get("provinces", board = board)
+  new_provinces <- canadacovid::get_provinces()
+
+  updated_provinces <- new_provinces %>%
+    dplyr::anti_join(old_provinces, by = c("name", "updated_at"))
+
+  if (nrow(updated_provinces) > 0) {
+    message("Updating provinces.")
+    pins::pin(new_provinces, name = "provinces", board = board)
+  }
+  return(updated_provinces$code)
+}
+
+#' Retrieve and save the reports data
+#'
+#' Retrieves the `reports` data from the Canadian COVID-19 tracker API
+#' and pins it to the given board.
+#'
+#' @param provinces_codes A list of two-letter territory/provinces codes
+#'   (e.g. "AB") to be updated.
+#' @param board The name of the `pins` board to write the data.
+#'
+#' @export
+#' @importFrom pins pin
+#' @importFrom canadacovid get_reports
+download_reports <- function(provinces_codes, board = "github") {
+  for (prov in provinces_codes) {
+    new_report <- canadacovid::get_reports(province = prov)
+    message("Updating ", prov, " report (timestamp: ",
+            unique(new_report$last_updated), ".")
+    pins::pin(new_report,
+              name = paste0("reports_", tolower(prov)), board = board)
+  }
 }

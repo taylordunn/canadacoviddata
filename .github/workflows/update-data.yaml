@@ -59,6 +59,7 @@ jobs:
         run: |
           devtools::load_all(".")
           register_github_board()
-          download_provinces()
+          updated_provinces <- download_provinces()
+          if (length(updated_provinces) > 0) download_reports(updated_provinces)
         shell: Rscript {0}
 

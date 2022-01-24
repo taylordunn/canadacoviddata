@@ -2,8 +2,11 @@
 
 export("%>%")
 export(download_provinces)
+export(download_reports)
 export(register_github_board)
 importFrom(canadacovid,get_provinces)
+importFrom(canadacovid,get_reports)
+importFrom(dplyr,anti_join)
 importFrom(magrittr,"%>%")
 importFrom(pins,board_register_github)
 importFrom(pins,pin)

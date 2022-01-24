@@ -9,7 +9,12 @@ download_provinces(board = "github")
 \arguments{
 \item{board}{The name of the \code{pins} board to write the data.}
 }
+\value{
+A list of two-letter province/territory codes that have been updated.
+}
 \description{
 Retrieves the \code{provinces} data from the Canadian COVID-19 tracker API
-and downloads it to the given board.
+and pins it to the given board.
+Returns the list of provinces which have been updated, by comparing the
+\code{updated_at} timestamp to the previously pinned data.
 }
