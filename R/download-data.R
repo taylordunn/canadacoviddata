@@ -24,5 +24,5 @@ register_github_board <- function() {
 #' @importFrom pins pin
 download_provinces <- function(board = "github") {
   canadacovid::get_provinces() %>%
-    pins::pin(provinces, name = "provinces", board = board)
+    pins::pin(name = "provinces", board = board)
 }

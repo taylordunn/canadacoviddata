@@ -1,7 +1,7 @@
 # Adapted from https://blog--simonpcouch.netlify.app/blog/r-github-actions-commit/
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   update-data:
@@ -33,12 +33,7 @@ jobs:
       - name: Query dependencies
         run: |
           install.packages("remotes")
-          install.packages("curl")
-          remotes::install_github("taylordunn/canadacovid")
           install.packages("sessioninfo")
-          install.packages("pins")
-          install.packages("dplyr")
-          install.packages("magittr")
           saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.rds", version = 2)
           writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/r-version")
         shell: Rscript {0}
@@ -57,6 +52,8 @@ jobs:
 
       - name: Update data
         run: |
-          source("R/job.R")
+          source("R/download-data.R")
+          register_github_board()
+          download_provinces()
         shell: Rscript {0}
 
