@@ -37,6 +37,7 @@ jobs:
         run: |
           install.packages("remotes")
           install.packages("sessioninfo")
+          install.packages("devtools")
           saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.rds", version = 2)
           writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/r-version")
         shell: Rscript {0}
@@ -55,7 +56,7 @@ jobs:
 
       - name: Update data
         run: |
-          source("R/download-data.R")
+          devtools::load_all(".")
           register_github_board()
           download_provinces()
         shell: Rscript {0}
