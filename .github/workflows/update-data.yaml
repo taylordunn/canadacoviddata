@@ -1,7 +1,7 @@
 # Adapted from https://blog--simonpcouch.netlify.app/blog/r-github-actions-commit/
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/30 * * * *"
 
 jobs:
   update-data:
