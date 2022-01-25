@@ -16,3 +16,9 @@
   description: ~
   rows: 731
   cols: 23
+- path: reports_bc
+  name: reports_bc
+  type: table
+  description: ~
+  rows: 731
+  cols: 23
