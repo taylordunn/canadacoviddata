@@ -50,7 +50,7 @@
   name: reports_sk
   type: table
   description: ~
-  rows: 731
+  rows: 732
   cols: 23
 - path: reports_ab
   name: reports_ab
