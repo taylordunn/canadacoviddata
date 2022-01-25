@@ -22,3 +22,9 @@
   description: ~
   rows: 731
   cols: 23
+- path: reports_qc
+  name: reports_qc
+  type: table
+  description: ~
+  rows: 731
+  cols: 23
