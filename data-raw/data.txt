@@ -28,3 +28,9 @@
   description: ~
   rows: 731
   cols: 23
+- path: reports_ns
+  name: reports_ns
+  type: table
+  description: ~
+  rows: 731
+  cols: 23
