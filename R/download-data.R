@@ -35,7 +35,7 @@ download_provinces <- function(board = "github") {
     dplyr::anti_join(old_provinces, by = c("name", "updated_at"))
 
   if (nrow(updated_provinces) > 0) {
-    message("Updating provinces.")
+    print("Updating provinces.")
     pins::pin(new_provinces, name = "provinces", board = board)
   }
   return(updated_provinces$code)
@@ -45,6 +45,8 @@ download_provinces <- function(board = "github") {
 #'
 #' Retrieves the `reports` data from the Canadian COVID-19 tracker API
 #' and pins it to the given board.
+#' Also computes some extra variables, `change_active`, `total_active`,
+#' and `positivity_rate`.
 #'
 #' @param provinces_codes A list of two-letter territory/provinces codes
 #'   (e.g. "AB") to be updated.
@@ -53,11 +55,20 @@ download_provinces <- function(board = "github") {
 #' @export
 #' @importFrom pins pin
 #' @importFrom canadacovid get_reports
+#' @importFrom rlang .data
+#' @importFrom dplyr mutate
 download_reports <- function(provinces_codes, board = "github") {
   for (prov in provinces_codes) {
-    new_report <- canadacovid::get_reports(province = prov)
-    message("Updating ", prov, " report (timestamp: ",
-            unique(new_report$last_updated), ".")
+    new_report <- canadacovid::get_reports(province = prov) %>%
+      dplyr::mutate(
+        change_active = .data$change_cases - .data$change_recoveries -
+          .data$change_fatalities,
+        total_active = .data$total_cases - .data$total_recoveries -
+          .data$total_fatalities,
+        positivity_rate = .data$change_cases / .data$change_tests
+      )
+    print(paste0("Updating ", prov, " report (timestamp: ",
+                 unique(new_report$last_updated), "."))
     pins::pin(new_report,
               name = paste0("reports_", tolower(prov)), board = board)
   }
