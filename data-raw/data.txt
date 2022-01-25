@@ -70,3 +70,9 @@
   description: ~
   rows: 731
   cols: 23
+- path: reports_yt
+  name: reports_yt
+  type: table
+  description: ~
+  rows: 731
+  cols: 23
