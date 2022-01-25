@@ -39,7 +39,7 @@
   type: table
   description: ~
   rows: 732
-  cols: 23
+  cols: 26
 - path: reports_pe
   name: reports_pe
   type: table
