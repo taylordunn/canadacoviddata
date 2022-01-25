@@ -63,3 +63,10 @@ jobs:
           if (length(updated_provinces) > 0) download_reports(updated_provinces)
         shell: Rscript {0}
 
+      - name: Session info
+        run: |
+          options(width = 100)
+          pkgs <- installed.packages()[, "Package"]
+          sessioninfo::session_info(pkgs, include_base = TRUE)
+        shell: Rscript {0}
+
