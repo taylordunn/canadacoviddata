@@ -10,3 +10,9 @@
   description: ~
   rows: 731
   cols: 23
+- path: reports_mb
+  name: reports_mb
+  type: table
+  description: ~
+  rows: 731
+  cols: 23
