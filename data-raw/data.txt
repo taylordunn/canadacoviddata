@@ -4,3 +4,21 @@
   description: ~
   rows: 13
   cols: 10
+- path: reports_on
+  name: reports_on
+  type: table
+  description: ~
+  rows: 731
+  cols: 23
+- path: reports_mb
+  name: reports_mb
+  type: table
+  description: ~
+  rows: 731
+  cols: 23
+- path: reports_bc
+  name: reports_bc
+  type: table
+  description: ~
+  rows: 731
+  cols: 23
