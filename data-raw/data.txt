@@ -40,3 +40,9 @@
   description: ~
   rows: 731
   cols: 23
+- path: reports_pe
+  name: reports_pe
+  type: table
+  description: ~
+  rows: 731
+  cols: 23
