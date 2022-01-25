@@ -76,3 +76,9 @@
   description: ~
   rows: 731
   cols: 23
+- path: reports_nu
+  name: reports_nu
+  type: table
+  description: ~
+  rows: 731
+  cols: 23
