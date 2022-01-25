@@ -68,7 +68,7 @@
   name: reports_nt
   type: table
   description: ~
-  rows: 731
+  rows: 732
   cols: 23
 - path: reports_yt
   name: reports_yt
