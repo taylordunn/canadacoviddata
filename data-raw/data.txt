@@ -34,3 +34,9 @@
   description: ~
   rows: 731
   cols: 23
+- path: reports_nb
+  name: reports_nb
+  type: table
+  description: ~
+  rows: 731
+  cols: 23
