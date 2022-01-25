@@ -80,5 +80,5 @@
   name: reports_nu
   type: table
   description: ~
-  rows: 731
+  rows: 732
   cols: 23
