@@ -57,7 +57,7 @@
   type: table
   description: ~
   rows: 732
-  cols: 23
+  cols: 26
 - path: reports_nl
   name: reports_nl
   type: table
