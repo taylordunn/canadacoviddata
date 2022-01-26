@@ -73,7 +73,7 @@ download_reports <- function(provinces_codes, board = "github") {
         positivity_rate = .data$change_cases / .data$change_tests
       )
     print(paste0("Updating ", prov, " report (timestamp: ",
-                 unique(new_report$last_updated), "."))
+                 unique(new_report$last_updated), ")."))
     pins::pin(new_report,
               name = paste0("reports_", tolower(prov)), board = board)
   }
