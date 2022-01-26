@@ -59,7 +59,12 @@ download_provinces <- function(board = "github") {
 #' @importFrom dplyr mutate
 download_reports <- function(provinces_codes, board = "github") {
   for (prov in provinces_codes) {
-    new_report <- canadacovid::get_reports(province = prov) %>%
+    if (prov == "overall") {
+      new_report <- canadacovid::get_reports("overall")
+    } else {
+      new_report <- canadacovid::get_reports(province = prov)
+    }
+    new_report <- new_report %>%
       dplyr::mutate(
         change_active = .data$change_cases - .data$change_recoveries -
           .data$change_fatalities,

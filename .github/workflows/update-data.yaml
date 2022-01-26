@@ -59,7 +59,10 @@ jobs:
           devtools::load_all(".")
           register_github_board()
           updated_provinces <- download_provinces()
-          if (length(updated_provinces) > 0) download_reports(updated_provinces)
+          if (length(updated_provinces) > 0) {
+            download_reports(updated_provinces)
+            download_reports("overall")
+          }
         shell: Rscript {0}
 
       - name: Session info
