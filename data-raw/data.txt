@@ -21,7 +21,7 @@
   type: table
   description: ~
   rows: 732
-  cols: 23
+  cols: 26
 - path: reports_qc
   name: reports_qc
   type: table
