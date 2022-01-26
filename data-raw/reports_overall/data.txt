@@ -1,0 +1,35 @@
+path:
+- data.csv
+- data.rds
+type: table
+rows: 732
+cols: 25
+columns:
+  last_updated: POSIXct
+  date: Date
+  change_cases: integer
+  change_fatalities: integer
+  change_tests: integer
+  change_hospitalizations: integer
+  change_criticals: integer
+  change_recoveries: integer
+  change_vaccinations: integer
+  change_vaccinated: integer
+  change_boosters_1: integer
+  change_vaccines_distributed: integer
+  total_cases: integer
+  total_fatalities: integer
+  total_tests: integer
+  total_hospitalizations: integer
+  total_criticals: integer
+  total_recoveries: integer
+  total_vaccinations: integer
+  total_vaccinated: integer
+  total_boosters_1: integer
+  total_vaccines_distributed: integer
+  change_active: integer
+  total_active: integer
+  positivity_rate: numeric
+filenames:
+  data.csv: data.csv
+  data.rds: data.rds
