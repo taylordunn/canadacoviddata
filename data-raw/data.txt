@@ -27,7 +27,7 @@
   type: table
   description: ~
   rows: 732
-  cols: 23
+  cols: 26
 - path: reports_ns
   name: reports_ns
   type: table
