@@ -32,8 +32,8 @@
   name: reports_ns
   type: table
   description: ~
-  rows: 740
-  cols: 26
+  rows: 741
+  cols: 27
 - path: reports_nb
   name: reports_nb
   type: table
