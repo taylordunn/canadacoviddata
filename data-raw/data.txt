@@ -51,7 +51,7 @@
   type: table
   description: ~
   rows: 741
-  cols: 27
+  cols: 28
 - path: reports_ab
   name: reports_ab
   type: table
