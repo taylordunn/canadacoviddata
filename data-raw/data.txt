@@ -87,4 +87,4 @@
   type: table
   description: ~
   rows: 740
-  cols: 25
+  cols: 27

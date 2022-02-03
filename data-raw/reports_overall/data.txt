@@ -3,7 +3,7 @@ path:
 - data.rds
 type: table
 rows: 740
-cols: 25
+cols: 27
 columns:
   last_updated: POSIXct
   date: Date
@@ -27,6 +27,8 @@ columns:
   total_vaccinated: integer
   total_boosters_1: integer
   total_vaccines_distributed: integer
+  change_boosters_2: integer
+  total_boosters_2: integer
   change_active: integer
   total_active: integer
   positivity_rate: numeric
