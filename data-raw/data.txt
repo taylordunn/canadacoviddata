@@ -9,7 +9,7 @@
   type: table
   description: ~
   rows: 740
-  cols: 26
+  cols: 28
 - path: reports_mb
   name: reports_mb
   type: table
