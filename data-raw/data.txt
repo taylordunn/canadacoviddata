@@ -69,7 +69,7 @@
   type: table
   description: ~
   rows: 745
-  cols: 27
+  cols: 28
 - path: reports_yt
   name: reports_yt
   type: table
