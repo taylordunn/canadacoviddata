@@ -2,7 +2,7 @@ path:
 - data.csv
 - data.rds
 type: table
-rows: 766
+rows: 767
 cols: 27
 columns:
   province: character
