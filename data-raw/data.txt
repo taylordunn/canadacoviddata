@@ -80,7 +80,7 @@
   name: reports_nu
   type: table
   description: ~
-  rows: 770
+  rows: 771
   cols: 27
 - path: reports_overall
   name: reports_overall
