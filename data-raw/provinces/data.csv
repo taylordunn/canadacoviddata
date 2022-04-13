@@ -1,11 +1,11 @@
 "id","code","name","population","area","gdp","geographic","data_status","updated_at","density"
-1,"ON","Ontario",14826276,917741,857384,TRUE,"Reported","2022-04-11 22:50:35",16.1551853954438
-2,"QC","Quebec",8604495,1356128,439375,TRUE,"Reported","2022-04-11 23:13:03",6.34489885910475
+1,"ON","Ontario",14826276,917741,857384,TRUE,"Reported","2022-04-12 22:56:00",16.1551853954438
+2,"QC","Quebec",8604495,1356128,439375,TRUE,"Reported","2022-04-12 22:54:02",6.34489885910475
 3,"NS","Nova Scotia",992055,53338,44354,TRUE,"No report expected today","2022-04-11 22:59:17",18.5994038021673
-4,"NB","New Brunswick",789225,71450,36966,TRUE,"No report expected today","2022-04-07 23:56:37",11.0458362491253
-5,"MB","Manitoba",1383765,553556,72688,TRUE,"No report expected today","2022-04-07 23:56:58",2.49977418725477
+4,"NB","New Brunswick",789225,71450,36966,TRUE,"Reported","2022-04-12 23:02:19",11.0458362491253
+5,"MB","Manitoba",1383765,553556,72688,TRUE,"No report expected today","2022-04-12 23:04:48",2.49977418725477
 6,"BC","British Columbia",5214805,925186,295401,TRUE,"No report expected today","2022-04-11 23:02:35",5.63649363479344
-7,"PE","Prince Edward Island",164318,5660,6994,TRUE,"No report expected today","2022-04-08 00:04:21",29.0314487632509
+7,"PE","Prince Edward Island",164318,5660,6994,TRUE,"Reported","2022-04-12 23:04:00",29.0314487632509
 8,"SK","Saskatchewan",1179844,591670,80679,TRUE,"No report expected today","2022-04-11 23:08:13",1.99409130089408
 9,"AB","Alberta",4442879,642317,344812,TRUE,"No report expected today","2022-04-08 00:06:21",6.91695689200192
 10,"NL","Newfoundland and Labrador",520553,373872,33241,TRUE,"Reported","2022-04-11 23:08:34",1.39232946035007
