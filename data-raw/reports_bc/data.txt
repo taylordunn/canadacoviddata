@@ -2,8 +2,8 @@ path:
 - data.csv
 - data.rds
 type: table
-rows: 829
-cols: 27
+rows: 832
+cols: 28
 columns:
   province: character
   last_updated: POSIXct
@@ -29,6 +29,7 @@ columns:
   total_boosters_1: integer
   total_vaccines_distributed: integer
   change_boosters_2: integer
+  total_boosters_2: integer
   change_active: integer
   total_active: integer
   positivity_rate: numeric
