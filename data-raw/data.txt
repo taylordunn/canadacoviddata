@@ -38,8 +38,8 @@
   name: reports_nb
   type: table
   description: ~
-  rows: 835
-  cols: 27
+  rows: 837
+  cols: 28
 - path: reports_pe
   name: reports_pe
   type: table
