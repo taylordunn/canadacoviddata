@@ -2,7 +2,7 @@ path:
 - data.csv
 - data.rds
 type: table
-rows: 835
+rows: 838
 cols: 28
 columns:
   province: character
@@ -17,6 +17,7 @@ columns:
   change_vaccinations: integer
   change_vaccinated: integer
   change_boosters_1: integer
+  change_boosters_2: integer
   change_vaccines_distributed: integer
   total_cases: integer
   total_fatalities: integer
@@ -27,9 +28,8 @@ columns:
   total_vaccinations: integer
   total_vaccinated: integer
   total_boosters_1: integer
-  total_vaccines_distributed: integer
-  change_boosters_2: integer
   total_boosters_2: integer
+  total_vaccines_distributed: integer
   change_active: integer
   total_active: integer
   positivity_rate: numeric
