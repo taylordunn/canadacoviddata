@@ -1,7 +1,7 @@
 "id","code","name","population","area","gdp","geographic","data_status","updated_at","density"
 1,"ON","Ontario",14826276,917741,857384,TRUE,"Reported","2022-07-15 10:33:07",16.1551853954438
 2,"QC","Quebec",8604495,1356128,439375,TRUE,"Reported","2022-07-15 10:45:02",6.34489885910475
-3,"NS","Nova Scotia",992055,53338,44354,TRUE,"No report expected today","2022-07-15 10:14:14",18.5994038021673
+3,"NS","Nova Scotia",992055,53338,44354,TRUE,"No report expected today","2022-07-22 12:07:34",18.5994038021673
 4,"NB","New Brunswick",789225,71450,36966,TRUE,"Reported","2022-07-22 11:38:40",11.0458362491253
 5,"MB","Manitoba",1383765,553556,72688,TRUE,"No report expected today","2022-07-22 11:30:55",2.49977418725477
 6,"BC","British Columbia",5214805,925186,295401,TRUE,"Reported","2022-07-22 11:16:28",5.63649363479344
