@@ -74,7 +74,7 @@
   name: reports_yt
   type: table
   description: ~
-  rows: 903
+  rows: 930
   cols: 28
 - path: reports_nu
   name: reports_nu
