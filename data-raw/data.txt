@@ -14,7 +14,7 @@
   name: reports_mb
   type: table
   description: ~
-  rows: 966
+  rows: 974
   cols: 28
 - path: reports_bc
   name: reports_bc
