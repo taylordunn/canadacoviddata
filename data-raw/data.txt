@@ -26,7 +26,7 @@
   name: reports_qc
   type: table
   description: ~
-  rows: 997
+  rows: 998
   cols: 28
 - path: reports_ns
   name: reports_ns
