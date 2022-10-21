@@ -20,7 +20,7 @@
   name: reports_bc
   type: table
   description: ~
-  rows: 991
+  rows: 998
   cols: 28
 - path: reports_qc
   name: reports_qc
