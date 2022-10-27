@@ -56,7 +56,7 @@
   name: reports_ab
   type: table
   description: ~
-  rows: 999
+  rows: 1002
   cols: 28
 - path: reports_nl
   name: reports_nl
