@@ -33,6 +33,12 @@ jobs:
       - name: Install curl headers
         run: sudo apt-get install libcurl4-openssl-dev
 
+      # Started getting dependency errors installing devtools due to the
+      #  `textshaping` package requiring these system libraries
+      # https://github.com/r-lib/textshaping/issues/21
+      - name: Install libs for devtools
+        run: sudo apt-get install libharfbuzz-dev libfribidi-dev
+
       - name: Query dependencies
         run: |
           install.packages("remotes")
