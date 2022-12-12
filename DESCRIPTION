@@ -10,11 +10,9 @@ Description: A small package to periodically download and save data from the
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Imports: 
-    canadacovid (>= 0.3.3),
+    canadacovid,
     dplyr,
     magrittr,
     pins
-Remotes:  
-    taylordunn/canadacovid

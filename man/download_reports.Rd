@@ -15,4 +15,6 @@ download_reports(provinces_codes, board = "github")
 \description{
 Retrieves the \code{reports} data from the Canadian COVID-19 tracker API
 and pins it to the given board.
+Also computes some extra variables, \code{change_active}, \code{total_active},
+and \code{positivity_rate}.
 }
