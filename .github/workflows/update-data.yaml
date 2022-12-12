@@ -44,6 +44,7 @@ jobs:
           install.packages("remotes")
           install.packages("sessioninfo")
           install.packages("devtools")
+          install.packages("canadacovid") # have to do this manually?
           saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.rds", version = 2)
           writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/r-version")
         shell: Rscript {0}
@@ -57,7 +58,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages("canadacovid") # have to do this manually?
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
 
